@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #050b1e, #020617);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.container {
+    width: 1100px;
+    height: 600px;
+    background: linear-gradient(135deg, #060d2d, #020617);
+    border-radius: 16px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+}
+
+/* LEFT CARD */
+.auth-card {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.brand span {
+    color: #22d3ee;
+    font-weight: 600;
+}
+
+.auth-card h1 {
+    font-size: 34px;
+    margin: 10px 0 30px;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.input-group input {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #020617;
+    color: #fff;
+    font-size: 14px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.actions button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+    color: #020617;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.6);
+}
+
+.link {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.link a {
+    color: #22d3ee;
+    text-decoration: none;
+}
+
+/* RIGHT VISUAL PANEL */
+.visual {
+    flex: 1;
+    position: relative;
+    background: radial-gradient(circle at center, rgba(34, 211, 238, 0.25), transparent 60%);
+}
+
+.visual::after {
+    content: "SECURE ACCESS";
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.05);
+}
