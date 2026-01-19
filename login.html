@@ -7,12 +7,10 @@
 <body>
 
 <div class="container">
-
     <div class="auth-card">
         <div class="brand">Welcome to <span>SecuraX</span></div>
         <h1>Sign in</h1>
 
-        <!-- ⚠️ ACTION & NAME ATTRIBUTES NOT CHANGED -->
         <form action="login" method="post">
 
             <div class="input-group">
@@ -25,6 +23,12 @@
                 <input type="password" name="password" required>
             </div>
 
+            <!-- 🔐 CAPTCHA -->
+            <div class="input-group">
+                <label>Enter CAPTCHA: <b>${captcha}</b></label>
+                <input type="text" name="captchaInput">
+            </div>
+
             <div class="actions">
                 <button type="submit">Sign in</button>
             </div>
@@ -34,9 +38,6 @@
             New user? <a href="register.html">Create account</a>
         </div>
     </div>
-
-    <div class="visual"></div>
-
 </div>
 
 </body>

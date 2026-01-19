@@ -17,6 +17,7 @@
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
+
     <!-- ================= LOGIN SERVLET ================= -->
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
@@ -26,6 +27,18 @@
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+    <!-- ================= LOGOUT SERVLET ================= -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.example.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 
 </web-app>
